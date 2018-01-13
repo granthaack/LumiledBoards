@@ -17748,9 +17748,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="100uF"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0309/12" package3d_urn="urn:adsk.eagle:package:26089/1" value="150"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0309/12" package3d_urn="urn:adsk.eagle:package:26089/1" value="250"/>
-<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17759,14 +17756,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instances>
 <instance part="U$1" gate="G$1" x="38.1" y="0"/>
 <instance part="IC1" gate="A" x="-27.94" y="0"/>
-<instance part="GND1" gate="1" x="-27.94" y="-22.86"/>
+<instance part="GND1" gate="1" x="-27.94" y="-12.7"/>
 <instance part="T1" gate="G$1" x="22.86" y="-15.24" rot="R270"/>
 <instance part="T2" gate="G$1" x="30.48" y="-20.32" rot="R270"/>
 <instance part="T3" gate="G$1" x="38.1" y="-25.4" rot="R270"/>
 <instance part="GND2" gate="1" x="17.78" y="-22.86"/>
 <instance part="GND3" gate="1" x="25.4" y="-27.94"/>
 <instance part="GND4" gate="1" x="33.02" y="-33.02"/>
-<instance part="SV1" gate="G$1" x="-38.1" y="-25.4" rot="R180"/>
+<instance part="SV1" gate="G$1" x="-27.94" y="-25.4" rot="R180"/>
 <instance part="X1" gate="-1" x="-48.26" y="-2.54" rot="R180"/>
 <instance part="X1" gate="-2" x="-48.26" y="0" rot="R180"/>
 <instance part="GND5" gate="1" x="-35.56" y="-12.7"/>
@@ -17782,9 +17779,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND9" gate="1" x="0" y="35.56" rot="R180"/>
 <instance part="C4" gate="G$1" x="7.62" y="10.16" rot="MR180"/>
 <instance part="GND10" gate="1" x="7.62" y="20.32" rot="R180"/>
-<instance part="R3" gate="G$1" x="-17.78" y="-10.16" rot="MR90"/>
-<instance part="R4" gate="G$1" x="-17.78" y="-20.32" rot="MR90"/>
-<instance part="GND11" gate="1" x="-17.78" y="-30.48"/>
 </instances>
 <busses>
 </busses>
@@ -17793,13 +17787,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="IC1" gate="A" pin="ADJ"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-27.94" y1="-7.62" x2="-27.94" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="-27.94" y1="-15.24" x2="-27.94" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-15.24" x2="-27.94" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="-17.78" y="-15.24"/>
-<junction x="-27.94" y="-15.24"/>
+<wire x1="-27.94" y1="-7.62" x2="-27.94" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="T1" gate="G$1" pin="E"/>
@@ -17847,11 +17835,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="7.62" y1="17.78" x2="7.62" y2="15.24" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="-17.78" y1="-25.4" x2="-17.78" y2="-27.94" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -17877,16 +17860,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="+3.3V" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="OUT"/>
-<wire x1="-10.16" y1="0" x2="-17.78" y2="0" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="0" x2="-20.32" y2="0" width="0.1524" layer="91"/>
+<label x="-20.32" y="-2.54" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="-17.78" y1="0" x2="-20.32" y2="0" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-2.54" x2="-10.16" y2="0" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="BLU+"/>
 <wire x1="-10.16" y1="0" x2="10.16" y2="0" width="0.1524" layer="91"/>
 <junction x="-10.16" y="0"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-17.78" y1="-5.08" x2="-17.78" y2="0" width="0.1524" layer="91"/>
-<junction x="-17.78" y="0"/>
 </segment>
 </net>
 <net name="GRN_PWM" class="0">
@@ -17897,9 +17877,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="1"/>
-<wire x1="-45.72" y1="-22.86" x2="-50.8" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="-50.8" y="-22.86"/>
-<label x="-50.8" y="-22.86" size="1.778" layer="95" rot="R180"/>
+<wire x1="-35.56" y1="-22.86" x2="-40.64" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="-40.64" y="-22.86"/>
+<label x="-40.64" y="-22.86" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="RED_PWM" class="0">
@@ -17910,9 +17890,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="2"/>
-<wire x1="-45.72" y1="-25.4" x2="-50.8" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="-50.8" y="-25.4"/>
-<label x="-50.8" y="-25.4" size="1.778" layer="95" rot="R180"/>
+<wire x1="-35.56" y1="-25.4" x2="-40.64" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="-40.64" y="-25.4"/>
+<label x="-40.64" y="-25.4" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="BLU_PWM" class="0">
@@ -17923,9 +17903,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="3"/>
-<wire x1="-45.72" y1="-27.94" x2="-50.8" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="-50.8" y="-27.94"/>
-<label x="-50.8" y="-27.94" size="1.778" layer="95" rot="R180"/>
+<wire x1="-35.56" y1="-27.94" x2="-40.64" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="-40.64" y="-27.94"/>
+<label x="-40.64" y="-27.94" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="+VIN" class="0">
