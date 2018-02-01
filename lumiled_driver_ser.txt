@@ -1,0 +1,23 @@
+Partlist exported from /home/granthaack/eagle/projects/LumiledBoards/lumiled_driver_ser.sch at 1/16/18 10:32 PM
+
+Part Value        Device                     Package                    Description                          MF    MPN        OC_FARNELL OC_NEWARK
+C1   10uF         CPOL-USE2-5                E2-5                       POLARIZED CAPACITOR, American symbol                                      
+C2   1uF          C-US025-024X044            C025-024X044               CAPACITOR, American symbol                                                
+C3   100nF        C-US025-024X044            C025-024X044               CAPACITOR, American symbol                                                
+C4   10uF         CPOL-USE2-5                E2-5                       POLARIZED CAPACITOR, American symbol                                      
+C5   100nF        C-US025-024X044            C025-024X044               CAPACITOR, American symbol                                                
+C6   100nF        C-US025-024X044            C025-024X044               CAPACITOR, American symbol                                                
+D1                ZENER-DIODEC1702-15        C1702-15                   Z-Diode                                                                   
+IC1               LM317TL                    317TL                      VOLTAGE REGULATOR                                                         
+IC2               LM317TL                    317TL                      VOLTAGE REGULATOR                                                         
+JP1  12V BYPASS   JUMPER-SMT_2_NC_TRACE_SILK SMT-JUMPER_2_NC_TRACE_SILK Normally closed trace jumper                                              
+R1                R-US_0309/12               0309/12                    RESISTOR, American symbol                                                 
+R2                R-US_0309/12               0309/12                    RESISTOR, American symbol                                                 
+R3                R-US_0309/12               0309/12                    RESISTOR, American symbol                                                 
+R4                R-US_0309/12               0309/12                    RESISTOR, American symbol                                                 
+SV1               MA03-1                     MA03-1                     PIN HEADER                                            unknown    unknown  
+T1                -NPN-TO92                  TO92                       NPN Transistror                                                           
+T2                -NPN-TO92                  TO92                       NPN Transistror                                                           
+T3                -NPN-TO92                  TO92                       NPN Transistror                                                           
+U$1  LUMILED_5LED LUMILED_5LED               MA05-2                                                                                               
+X1   PWR          22-23-2021                 22-23-2021                 .100" (2.54mm) Center Header - 2 Pin MOLEX 22-23-2021 1462926    25C3832  
