@@ -332,9 +332,9 @@
 <pin name="GRN+" x="-27.94" y="5.08" length="middle"/>
 <pin name="RED+" x="-27.94" y="2.54" length="middle"/>
 <pin name="BLU+" x="-27.94" y="0" length="middle"/>
-<pin name="GRN-" x="-15.24" y="-12.7" length="middle" rot="R90"/>
-<pin name="RED-" x="-7.62" y="-12.7" length="middle" rot="R90"/>
-<pin name="BLU-" x="0" y="-12.7" length="middle" rot="R90"/>
+<pin name="GRN-" x="-10.16" y="-12.7" length="middle" rot="R90"/>
+<pin name="RED-" x="-2.54" y="-12.7" length="middle" rot="R90"/>
+<pin name="BLU-" x="5.08" y="-12.7" length="middle" rot="R90"/>
 </symbol>
 <symbol name="LUMILED_10LED">
 <circle x="-20.32" y="0" radius="2.54" width="0.254" layer="94"/>

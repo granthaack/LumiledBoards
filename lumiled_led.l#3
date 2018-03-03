@@ -399,15 +399,7 @@
 <gate name="G$1" symbol="LUMILED_5LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MA05-2">
-<connects>
-<connect gate="G$1" pin="BLU+" pad="9"/>
-<connect gate="G$1" pin="BLU-" pad="10"/>
-<connect gate="G$1" pin="GRN+" pad="5 7"/>
-<connect gate="G$1" pin="GRN-" pad="6 8"/>
-<connect gate="G$1" pin="RED+" pad="1 3"/>
-<connect gate="G$1" pin="RED-" pad="2 4"/>
-</connects>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
